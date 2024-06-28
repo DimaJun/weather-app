@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather app</title>
+  <script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <h1 class="weather-app-title">Weather App</h1>
+      <div class="weather-app">
+        <img 
+          src="images/sun.png"
+          alt=""
+          class="weather-icon"
+          loading="lazy"
+        />
+        <div class="temperature-wrapper">
+          <p><span id="tempCurrent">+25</span>&deg;C</p>
+          <p>Min: <span id="tempMin">+10&deg;C</span> Max: <span id="tempMax">+26&deg;C</span></p>
+          <p id="city">Kyiv</p>
+          <p class="weather-desription">
+            <span id="weatherMain">Clouds</span>, <span id="weatherDescr">scattered clouds</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-description">This app retrieves weather data based on your location.</div>
+  </body>
+</html>
